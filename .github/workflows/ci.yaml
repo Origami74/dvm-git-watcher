@@ -20,5 +20,3 @@ jobs:
         with:
           host: 'https://blossom.hzrd149.com'
           filePath: 'deno.json'
-        env:
-          SKIP_CACHE: 'true'
