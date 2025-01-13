@@ -13,11 +13,10 @@ jobs:
   upload-blossom-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '22' # Specify your desired Node.js version
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Upload to Blossom
         uses: Origami74/upload-blossom-action@main
         with:
           host: 'https://blossom.hzrd149.com'
+          filePath: 'deno.json'
